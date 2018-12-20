@@ -1,23 +1,19 @@
 package com.guoyasoft.gyautotest.ui.common;
 
 import io.qameta.allure.Allure;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 public class BaseUI {
 	public WebDriver driver;
@@ -193,7 +189,7 @@ public class BaseUI {
 							.println("new page title is " + window.getTitle());
 					break;
 				} catch (Exception e) {
-					System.out.println("法切换到新打开窗口" + e.getMessage());
+					System.out.println("无法切换到新打开窗口" + e.getMessage());
 
 				}
 			}
