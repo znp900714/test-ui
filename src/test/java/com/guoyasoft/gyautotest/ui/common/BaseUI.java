@@ -113,8 +113,8 @@ public class BaseUI {
 		try {
 			if (element.isEnabled()) {
 				element.click();
-				System.out.println("Element: " + element.toString()
-						+ " was clicked.");
+				/*System.out.println("Element: " + element.toString()
+						+ " was clicked.");*/
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -8,17 +8,12 @@ import com.guoyasoft.gyautotest.api.bean.user.signUp.SignUpReq;
 import com.guoyasoft.gyautotest.api.bean.user.signUp.SignUpResp;
 import com.guoyasoft.gyautotest.api.common.BaseApi;
 import com.guoyasoft.gyautotest.api.service.user.UserApi;
-import com.guoyasoft.gyautotest.tools.CSVReader;
-import com.guoyasoft.gyautotest.tools.JdbcTools;
-import com.guoyasoft.gyautotest.tools.PinYinTools;
-import com.guoyasoft.gyautotest.tools.PropertiesTools;
-import com.guoyasoft.gyautotest.tools.RandomTool;
-import com.guoyasoft.gyautotest.ui.pages.taobao.Login;
-import io.qameta.allure.Allure;
-import java.util.Map;
-import java.util.Properties;
+import com.guoyasoft.gyautotest.tools.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.Map;
+import java.util.Properties;
 
 public class UserTest extends BaseApi {
 
