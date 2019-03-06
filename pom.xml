@@ -88,7 +88,7 @@
       <version>2.0</version>
     </dependency>
 
-    <!-- fastjson 阿里生成和解析json add by 吴令 20181110 -->
+    <!-- fastjson 阿里生成和解析json -->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
@@ -100,6 +100,14 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.18</version>
+    </dependency>
+
+    <!-- appium 移动端自动化框架-->
+    <dependency>
+      <groupId>io.appium</groupId>
+      <artifactId>java-client</artifactId>
+      <version>5.0.0-BETA9</version>
+      <scope>test</scope>
     </dependency>
 
   </dependencies>

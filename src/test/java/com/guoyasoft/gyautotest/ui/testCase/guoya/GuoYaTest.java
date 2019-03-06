@@ -1,6 +1,5 @@
 package com.guoyasoft.gyautotest.ui.testCase.guoya;
 
-import com.fasterxml.jackson.databind.ser.Serializers.Base;
 import com.guoyasoft.gyautotest.ui.common.BaseUI;
 import org.openqa.selenium.Cookie;
 import org.testng.annotations.Test;
